@@ -16,6 +16,10 @@ export class ProductListComponent {
   share() {
     window.alert('Das Produkt wurde geteilt!');
   }
+
+  onNotify() {
+    window.alert('Sie bekommen eine Benachrichtigung wenn das Produkt im Angebot ist.')
+  }
 }
 
 
