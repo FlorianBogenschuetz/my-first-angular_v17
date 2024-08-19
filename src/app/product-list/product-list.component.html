@@ -1,7 +1,24 @@
 <h2>Products Florian</h2>
 
 <div *ngFor="let product of products">
-  <h3>{{ product.name }} - {{ product.price }} €</h3>
+  <h3>
+    <a [title]="product.name + 'details' ">
+    {{ product.name }} - {{ product.price }} €
+    </a>
+  </h3>
+
+  <p *ngIf="product.description">
+    Descitpion: {{product.description}}
+  </p>
+
+  <button type="button" (click)="share()">
+    Teilen
+  </button>
+
+  <app-product-alerts
+    [product]="product">
+  </app-product-alerts>
+
 </div>
 
 <!-- 
