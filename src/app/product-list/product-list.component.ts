@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { products } from '../products';
 import { ProductAlertsComponent } from '../product-alerts/product-alerts.component';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-product-list',
   standalone: true,
-  imports: [ProductAlertsComponent, CommonModule],
+  imports: [ProductAlertsComponent, CommonModule, RouterModule],
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
