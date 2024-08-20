@@ -19,10 +19,22 @@ export const products = [
     description: 'A great phone with one of the best cameras'
   },
   {
+    id: 2,
+    name: 'Samsung Galaxy',
+    price: 280,
+    description: 'All you need.'
+  },
+  {
+    id: 2,
+    name: 'Sony Ericson',
+    price: 350,
+    description: 'Best old times.'
+  },
+  {
     id: 3,
     name: 'Phone Standard',
     price: 299,
-    description: ''
+    description: 'no description'
   }
 ];
 
